@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="gs"
+           fetch="https://gerrit.googlesource.com/"
+           review="gerrit-review.googlesource.com"
+           revision="refs/tags/stable-2.10"
+           sync-j="4" />
+
+  <remote  name="gh"
+           fetch="git://github.com/"
+           sync-c="true"
+           sync-j="4" />
+
+  <default revision="refs/tags/stable-2.10"
+           remote="gs"
+           sync-c="true"
+           sync-j="4" />
+
+  <project name="gerrit" path="." remote="gs" />
+</manifest>
+
+
